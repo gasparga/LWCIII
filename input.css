@@ -1,0 +1,26 @@
+.corp {
+    background-color: rgb(230, 112, 112);
+    border: 3%;
+    border-radius: 10%;
+    border-color: rgb(17, 15, 15);
+    box-shadow: 2px 2px 1px 2px;
+    border-style: groove;
+    text-align: center;
+    width: 50%;
+    position: relative;
+    margin-left: 25%;
+    font-weight: bold;
+}
+
+.corp2 {
+    border-left: 10%;
+    border-right: 10%;
+    border-bottom: 10%;
+    border-top: 10%;
+    border: 3%;
+    border-color: black;
+    border-radius: 3%;
+    border-style: groove;
+    font-weight: bold;
+    background-color: azure;
+}

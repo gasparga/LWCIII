@@ -1,0 +1,26 @@
+<template>
+	<lightning-card title="Formulário">
+
+		<div class="corp2">
+
+
+			<lightning-input label="Nome: " type="text" name="Nome" onchange={handleOnChangeNome}></lightning-input>
+
+			<lightning-input label="Altura: " type="number" name="altura" step=".01" onchange={handleOnChangeAltura}></lightning-input>
+
+			<lightning-input label="Peso: " type="number" name="peso" step=".01" onchange={handleOnChangePeso}></lightning-input>
+		</div>
+
+		<center> <lightning-button variant="brand-outline" label="Cadastrar" title="Primary action with lighter look" onclick={handleOnClick} class="slds-m-left_x-small"></lightning-button></center>
+		<br/>
+		<div class="corp">
+			<h1>IMC: {imc} </h1>
+			<p>Sr.(a) {nome}</p>
+			
+
+		</div>
+	</lightning-card>
+
+
+
+</template>
