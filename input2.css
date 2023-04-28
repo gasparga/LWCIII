@@ -1,0 +1,27 @@
+.corp {
+    border: 4px;
+    border-radius: 3%;
+    border-style: groove;
+    border-color: black;
+    box-shadow: 2px 2px 2px 2px;
+    text-align: center;
+    width: 50%;
+    position: relative;
+    margin-left: 25%;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card {
+    border: 4px;
+    border-radius: 3%;
+    border-style: groove;
+    border-color: black;
+    box-shadow: 2px 2px 2px 2px;
+    text-align: center;
+    width: 50%;
+    position: relative;
+    margin-left: 25%;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

@@ -1,0 +1,47 @@
+<template>
+	<lightning-card title="Formulário">
+
+		<div class="corp2">
+
+
+			<lightning-input label="Primeiro Nome: " type="text" name="primeironome" onchange={handleInputChange}></lightning-input>
+
+			<lightning-input label="Sobrenome: " type="text" name="sobrenome" onchange={handleInputChange}></lightning-input>
+
+			<lightning-input label="Email: " type="email" name="email"  onchange={handleInputChange}></lightning-input>
+
+            <lightning-input label="WebSite: " type="text" name="website" onchange={handleInputChange}></lightning-input>
+
+            <lightning-input label="Empresa: " type="text" name="empresa" onchange={handleInputChange}></lightning-input>
+
+            <lightning-input label="Receita Anual: " type="number" name="receitaanual" step=".1" onchange={handleInputChange}></lightning-input>
+
+		</div>
+
+		<lightning-button variant="brand-outline" label="Cadastrar" title="Primary action with lighter look" onclick={handleOnClick} class="slds-m-left_x-small"></lightning-button>
+        
+        <div if:true={mostra} class="card">
+            <h1>Novo Lead</h1>
+        <p>Nome: {primeironome1} {sobrenome1}</p>
+        <p>Email: {email1}</p>
+        <p>WebSite: {website1}</p>
+        <p>Empresa: {empresa1}</p>
+        <p>Receita Anual: {receitaanual1}</p>
+
+        <template for:each={inputs} for:item="item" for:index="index">
+        <div key={item.primeironome}>
+        <p>{item.sobrenome}</p>
+        </div>
+          
+
+
+        </template>
+
+
+
+</div>
+</lightning-card>
+
+
+
+</template>
